@@ -90,3 +90,41 @@ nav a{
     text-decoration:none;
     border-radius:5px;
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.car-logo{
+    width:40px;
+    height:18px;
+    background:#00b7ff;
+    border-radius:20px 20px 5px 5px;
+    position:relative;
+}
+
+.car-logo::before,
+.car-logo::after{
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    width:10px;
+    height:10px;
+    background:white;
+    border-radius:50%;
+}
+
+.car-logo::before{
+    left:6px;
+}
+
+.car-logo::after{
+    right:6px;
+}
+
+.price{
+    padding:0 15px 10px;
+    font-weight:bold;
+    color:#00ffcc;
+}
